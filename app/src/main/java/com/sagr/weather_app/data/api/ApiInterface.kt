@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface ApiInterface {
 
     @GET("data/2.5/weather")
-    fun getTopRatedMoviesAsync(
+    fun getCityWeather(
         @Query("appid") apiKey: String,
         @Query("q") cityName: String
     ): Deferred<WeatherResponse>
