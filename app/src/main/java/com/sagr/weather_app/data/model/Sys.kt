@@ -11,8 +11,6 @@ import com.squareup.moshi.Json
 data class Sys(
     @Json(name = "country")
     val country: String, // EG
-    @Json(name = "id")
-    val id: Int, // 2526
     @Json(name = "sunrise")
     val sunrise: Int, // 1662002999
     @Json(name = "sunset")
